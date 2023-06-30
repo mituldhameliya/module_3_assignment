@@ -1,0 +1,15 @@
+The differences between structures and unions:
+
+- Structures:
+  - Allocate separate memory for each member.
+  - All members can be accessed simultaneously and retain their individual values.
+  - The size is determined by the sum of the sizes of all members.
+  - Used to group related data elements together and access them independently.
+
+- Unions:
+  - Allocate memory that is shared among members.
+  - Only one member can be active at a time.
+  - The size is determined by the size of the largest member.
+  - Used when interpreting the same memory location in different ways or saving memory by reusing memory space.
+
+In structures, members have their own memory, allowing them to store different values independently. In unions, all members share the same memory, so modifying one member can affect the values of other members. Structures are used for grouping related data, while unions are used for memory-efficient representation and interpretation of data.
